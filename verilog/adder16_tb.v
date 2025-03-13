@@ -1,8 +1,8 @@
 `include "adder16.v"
 
 module Adder16_tb;
-    reg[15:0] a, b;
-    wire[15:0] out;
+    reg signed [15:0]  a, b;
+    wire signed [15:0] out;
     Adder16 adder1(a, b, out);
 
     initial begin
